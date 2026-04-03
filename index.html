@@ -21,26 +21,25 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-bg-parallax" id="heroBg"></div>
-            <div class="bubble-container" id="bubbleContainer"></div>
-<img src="can.png" alt="Dr Pepper Can" class="hero-image">            
-            <div class="hero-content">
-                <h1 class="reveal-text">23 Flavors.<br><span class="highlight" style="color: #6B0D1C;">One of a Kind.</span></h1>
-                <p class="fade-in">Discover the taste that's always been unapologetically different.</p>
-               <section id="flavors" style="padding: 100px 20px; text-align: center; background: #3D1308;">
-    <h2 style="font-size: 3rem; margin-bottom: 20px;">The Mystery of 23</h2>
-    <p>Click on a bubble to reveal the secret notes!</p>
-    
-    <div class="flavor-grid" id="flavorGrid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 40px;">
-        </div>
-</section>
-                    <a href="#" class="btn-secondary">Explore Flavors</a>
-                </div>
+   <main>
+    <section class="hero" id="home">
+        <div class="bubble-container" id="bubbleContainer"></div>
+        <div class="hero-content">
+            <img src="can.png" alt="Dr Pepper Can" class="hero-image">
+            <h1 class="reveal-text">23 Flavors.<br><span class="highlight">One of a Kind.</span></h1>
+            <p class="fade-in">Discover the taste that's always been unapologetically different.</p>
+            <div class="hero-btns">
+                <a href="#flavors" class="btn-primary">Explore Flavors</a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section id="flavors" class="flavor-section">
+        <h2>The Mystery of 23</h2>
+        <p>Click on a bubble to reveal the secret notes!</p>
+        <div class="flavor-grid" id="flavorGrid"></div>
+    </section>
+</main>
 
     <script src="script.js"></script>
 </body>
