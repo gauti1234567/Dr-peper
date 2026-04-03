@@ -67,3 +67,15 @@ body {
 @keyframes rise {
     to { transform: translateY(-110vh); opacity: 0; }
 }
+.hero-image {
+    width: 300px; /* Aap size chhota-bada kar sakte hain */
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5)); /* Thodi shadow taaki real lage */
+    animation: float 4s ease-in-out infinite; /* Can thoda hawa mein tairta dikhega */
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
