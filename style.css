@@ -1,0 +1,69 @@
+:root {
+    --burgundy: #6B0D1C;
+    --brown: #3D1308;
+    --cream: #F4E8D8;
+    --black: #0A0A0A;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--black);
+    color: var(--cream);
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+.main-header {
+    position: fixed;
+    top: 0; width: 100%; z-index: 1000;
+    padding: 1.5rem 5%;
+    display: flex; justify-content: center;
+}
+
+.nav-container {
+    width: 100%; max-width: 1200px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+.nav-links { display: flex; list-style: none; gap: 2rem; }
+.nav-links a { color: var(--cream); text-decoration: none; font-weight: 600; }
+
+.cta-join {
+    background: var(--burgundy);
+    color: var(--cream);
+    border: none; padding: 0.8rem 1.5rem;
+    border-radius: 5px; cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh; display: flex; align-items: center;
+    justify-content: center; text-align: center; position: relative;
+}
+
+.hero-content h1 { font-family: 'Montserrat'; font-size: 4rem; margin-bottom: 1rem; }
+
+.btn-primary {
+    background: var(--burgundy); color: white;
+    padding: 1rem 2rem; text-decoration: none; border-radius: 5px;
+    display: inline-block; margin: 10px;
+}
+
+.btn-secondary {
+    border: 2px solid var(--cream); color: var(--cream);
+    padding: 1rem 2rem; text-decoration: none; border-radius: 5px;
+    display: inline-block; margin: 10px;
+}
+
+/* Bubbles */
+.bubble {
+    position: absolute; bottom: -50px;
+    background: rgba(244, 232, 216, 0.2);
+    border-radius: 50%; animation: rise var(--duration) infinite ease-in;
+}
+
+@keyframes rise {
+    to { transform: translateY(-110vh); opacity: 0; }
+}
