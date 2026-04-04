@@ -167,3 +167,82 @@ body {
 @media (max-width: 600px) {
     .signup-form input { width: 100%; }
 }
+
+/* Phase 8: Footer Styling */
+.main-footer {
+    background-color: var(--black);
+    color: var(--cream);
+    padding: 80px 5% 30px;
+    border-top: 1px solid rgba(244, 232, 216, 0.1);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-logo h2 {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    color: var(--burgundy);
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.link-group h3 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: var(--burgundy);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.link-group ul {
+    list-style: none;
+}
+
+.link-group ul li {
+    margin-bottom: 10px;
+}
+
+.link-group ul li a {
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.link-group ul li a:hover {
+    opacity: 1;
+    color: var(--burgundy);
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(244, 232, 216, 0.05);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links {
+        justify-content: center;
+        gap: 30px;
+    }
+}
