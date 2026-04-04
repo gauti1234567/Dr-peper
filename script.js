@@ -30,3 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.appendChild(note);
     });
 });
+// Email Form Submission logic
+const emailForm = document.getElementById('emailForm');
+if (emailForm) {
+    emailForm.onsubmit = (e) => {
+        e.preventDefault(); // Page refresh hone se rokta hai
+        const email = document.getElementById('userEmail').value;
+        alert("Welcome to the Club! A secret offer is on its way to: " + email);
+        emailForm.innerHTML = "<h3>Thanks for joining! 🥤 Check your inbox.</h3>";
+    };
+}
