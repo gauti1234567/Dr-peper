@@ -16,12 +16,34 @@ body {
 
 /* Navigation */
 .main-header {
-    position: fixed;
-    top: 0; width: 100%; z-index: 1000;
-    padding: 1.5rem 5%;
-    display: flex; justify-content: center;
+    position: absolute; /* Hero ke upar rahega */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent; /* Taaki hero background dikhe */
 }
 
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px; /* Header ke liye jagah chhodein */
+    text-align: center;
+}
+
+.hero-image {
+    width: 200px; /* Size thoda chhota kiya hai taaki balance rahe */
+    height: auto;
+    margin-bottom: 20px;
+    z-index: 1;
+}
 .nav-container {
     width: 100%; max-width: 1200px;
     display: flex; justify-content: space-between; align-items: center;
