@@ -9,37 +9,45 @@
 </head>
 <body>
 
-    <header class="main-header" id="header">
-        <nav class="nav-container">
-            <div class="logo" style="font-weight:900; font-size: 1.5rem; color: #F4E8D8;">DR PEPPER</div>
+    <!-- Phase 9: Header (Logo & Nav) -->
+    <header class="main-header">
+        <div class="logo">DR PEPPER</div>
+        <nav>
             <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#flavors">Flavors</a></li>
-                <li><a href="#story">Our Story</a></li>
-                <li><a href="#locator">Find Dr Pepper</a></li>
+                <li><a href="https://www.drpepper.com" target="_blank">Official Site</a></li>
             </ul>
-            <button class="cta-join">Join the Club</button>
         </nav>
+        <button class="cta-join">Join the Club</button>
     </header>
 
-   <main>
-    <section class="hero" id="home">
-        <div class="bubble-container" id="bubbleContainer"></div>
-        <div class="hero-content">
-            <img src="can.png" alt="Dr Pepper Can" class="hero-image">
-            <h1 class="reveal-text">23 Flavors.<br><span class="highlight">One of a Kind.</span></h1>
-            <p class="fade-in">Discover the taste that's always been unapologetically different.</p>
-            <div class="hero-btns">
-                <a href="#flavors" class="btn-primary">Explore Flavors</a>
+    <main>
+        <!-- Phase 1: Hero Section -->
+        <section class="hero" id="home">
+            <div class="bubble-container" id="bubbleContainer"></div>
+            <div class="hero-content">
+                <!-- Aapki uploaded image 'can.png' yahan dikhegi -->
+                <img src="can.png" alt="Dr Pepper Can" class="hero-image">
+                <h1 class="reveal-text">23 Flavors.<br><span class="highlight">One of a Kind.</span></h1>
+                <p class="fade-in">Discover the taste that's always been unapologetically different.</p>
+                <div class="hero-btns">
+                    <a href="#flavors" class="btn-primary">Explore Flavors</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="flavors" class="flavor-section">
-        <h2>The Mystery of 23</h2>
-        <p>Click on a bubble to reveal the secret notes!</p>
-        <div class="flavor-grid" id="flavorGrid"></div>
-    </section>
-</main>
+        <!-- Phase 2: Flavor Discovery Section -->
+        <section id="flavors" class="flavor-section">
+            <div class="flavor-container">
+                <h2>The Mystery of 23</h2>
+                <p>Click on a note to reveal the secret blend!</p>
+                <div class="flavor-grid" id="flavorGrid">
+                    <!-- Flavors JS se yahan aayenge -->
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
